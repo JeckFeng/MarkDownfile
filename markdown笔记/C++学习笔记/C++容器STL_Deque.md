@@ -34,7 +34,6 @@ deque.empty();//判断容器是否为空
 deque.resize(num);//重新指定容器的长度为num,若容器变长，则以默认值填充新位置。如果容器变短，则末尾超出容器长度的元素被删除。
 
 deque.resize(num, elem); //重新指定容器的长度为num,若容器变长，则以elem值填充新位置,如果容器变短，则末尾超出容器长度的元素被删除。
-
 ```
 
 ## deque 双端插入和删除操作
@@ -47,7 +46,6 @@ push_front(elem);//在容器头部插入一个数据
 pop_back();//删除容器最后一个数据
 
 pop_front();//删除容器第一个数据
-
 ```
 
 ## deque 的数据存取
@@ -56,7 +54,6 @@ pop_front();//删除容器第一个数据
 front();//返回第一个数据。
 
 back();//返回最后一个数据
-
 ```
 
 ## deque 的插入操作
@@ -69,7 +66,6 @@ insert(pos,n,elem);//在pos位置插入n个elem数据，无返回值。
 insert(pos,beg,end);//在pos位置插入[beg,end)区间的数据，无返回值。
 
 ```
-
 ## deque的删除操作
 
 ```C++
@@ -78,7 +74,6 @@ clear();//移除容器的所有数据
 erase(beg,end);//删除[beg,end)区间的数据，返回下一个数据的位置。
 
 erase(pos);//删除pos位置的数据，返回下一个数据的位置。
-
 ```
 
 ## deque的遍历操作
@@ -107,20 +102,8 @@ void test(){
     d.push_back(1);
     d.push_back(7);
     d.push_back(2);
-    
+
     sort(d.begin(), d.end(), compare);
     printDeque(d);
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
